@@ -2,19 +2,19 @@
 //  LKTabBarItem.swift
 //  SwiftUITabBar
 //
-//  Created by 李荣生 on 2023/12/9.
+//  Created by 李棒棒 on 2023/12/9.
 //
 
 import SwiftUI
 
 enum LKTabBarItem: Hashable {
     
-    case home,
-         news,
-         media,
-         message,
-         mine,
-         publish
+    case home,//首页
+         news,//资讯
+         media,//自媒体
+         message,//消息
+         mine,//个人中心
+         publish//发布
     
     ///标题
     var title: String {
@@ -81,16 +81,16 @@ enum LKTabBarItem: Hashable {
     var seFont:Font {
         return Font.system(size: 16,weight: .bold)
     }
-    
+    //未选中时的字体颜色
     var norTitleColor:Color {
         return Color.gray
     }
-    
+    //已选中时的字体颜色
     var seTitleColor:Color {
         return Color.blue
     }
     
-    ///item的配色
+    ///item的滑动色块配色
     var lumpColor: Color {
         switch self {
         case .home:
@@ -107,6 +107,4 @@ enum LKTabBarItem: Hashable {
             return Color.clear
         }
     }
-    
-    
 }

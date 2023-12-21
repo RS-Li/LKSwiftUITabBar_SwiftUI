@@ -2,7 +2,7 @@
 //  LKShapedTabBarView.swift
 //  SwiftUITabBar
 //
-//  Created by 李荣生 on 2023/12/12.
+//  Created by 李棒棒 on 2023/12/12.
 //
 
 import SwiftUI

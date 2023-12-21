@@ -2,7 +2,7 @@
 //  LKTabBarView.swift
 //  SwiftUITabBar
 //
-//  Created by 李荣生 on 2023/12/9.
+//  Created by 李棒棒 on 2023/12/9.
 //
 
 import SwiftUI
@@ -58,7 +58,6 @@ struct LKTabBarView: View {
                         animationSelectedItem = newValue
                     }
                 }
-            
         }
     }
 }
@@ -67,7 +66,7 @@ struct LKTabBarView: View {
 //    LKTabBarView()
 //}
 
-
+///normal:常规型
 extension LKTabBarView {
     
     private var normalTabBar: some View {
@@ -90,8 +89,6 @@ extension LKTabBarView {
         .frame(minWidth: UIScreen.main.bounds.width)
         .padding(EdgeInsets(top: 6.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
         .background(Color.Auto.tabbar_background.ignoresSafeArea(edges: .bottom))
-
-
     }
     
     private func normalTabItemView(tabItem:LKTabBarItem) -> some View {
@@ -117,7 +114,7 @@ extension LKTabBarView {
 }
 
 
-
+///sliderLump:滑动色块
 extension LKTabBarView {
     
     private var sliderLumpTabBar: some View {
@@ -171,7 +168,7 @@ extension LKTabBarView {
 }
 
 
-
+///colorLump:常规色块
 extension LKTabBarView {
     
     private var colorLumpTabBar: some View {
@@ -213,10 +210,8 @@ extension LKTabBarView {
     
 }
 
-
+///shaped:中心异形 (仿墨迹天气)
 extension LKTabBarView {
-    
-    
     private var shapedTabBar: some View {
         
         // ZStack(alignment: .bottom) {
